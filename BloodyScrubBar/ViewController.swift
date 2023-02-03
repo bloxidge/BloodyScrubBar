@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         if let text = sender.text, let value = try? Float(text, format: .number) {
             let invertedValue = trailingSlider.maximumValue - value
             trailingSlider.value = invertedValue
-            scrubBar.updateTrailingConstraint(proportionOfTotalWidth: Double(invertedValue))
+            scrubBar.updateTrailingConstraint(proportionOfTotalWidth: Double(value))
         }
     }
 
