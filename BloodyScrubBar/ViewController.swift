@@ -13,11 +13,16 @@ class ViewController: UIViewController {
     @IBOutlet var trailingLabel: UILabel!
     @IBOutlet var scrubBar: SeekableRangeScrubBarView!
 
+    private let startTime: TimeInterval = 0
+    private let endTime: TimeInterval = 60*60
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let iPlayerPink = UIColor(red: 1, green: 0.298, blue: 0.596, alpha: 0.5)
-        scrubBar.applyTheme(elapsedProgressColor: iPlayerPink,
+        leadingLabel.text = startTime.string
+        trailingLabel.text = endTime.string
+
+        scrubBar.applyTheme(elapsedProgressColor: UIColor(red: 1, green: 0.298, blue: 0.596, alpha: 0.5),
                             remainingProgressColor: UIColor(white: 1.0, alpha: 0.3),
                             unseekableColor: UIColor(white: 0.7, alpha: 0.3))
         scrubBar.delegate = self
@@ -56,6 +61,9 @@ class ViewController: UIViewController {
 
 extension ViewController: SeekableRangeScrubBarViewDelegate {
     func rangedScrubBarDidEndScrubbing(at value: Float) {
+        let totalTime = endTime - startTime
+        let currentTime = (TimeInterval(value) * totalTime) + startTime
+        leadingLabel.text = currentTime.string
     }
 
     func rangedScrubBarDidStartScrubbing() {
@@ -63,5 +71,19 @@ extension ViewController: SeekableRangeScrubBarViewDelegate {
 
     func rangedScrubBarDidMove(to value: Float) {
         valueLabel.text = String(format: "%0.6f", value)
+    }
+}
+
+extension TimeInterval {
+    var string: String {
+        let interval = Int(floor(self))
+        let seconds = interval % 60
+        let minutes = (interval / 60) % 60
+        let hours = (interval / 3600)
+        if hours > 0 {
+            return String(format: "%d:%02d:%02d", hours, minutes, seconds)
+        } else {
+            return String(format: "%d:%02d", minutes, seconds)
+        }
     }
 }
