@@ -46,7 +46,7 @@ class SeekableRangeScrubBarView: UIView {
     func applyTheme(elapsedProgressColor: UIColor,
                     remainingProgressColor: UIColor,
                     unseekableColor: UIColor) {
-        activeSlider.setThumbImage(thumbImage(forSize: CGSize(width: 20, height: 20), tint: elapsedProgressColor), for: .normal)
+        activeSlider.setThumbImage(thumbImage(forSize: CGSize(width: 12, height: 12), tint: elapsedProgressColor), for: .normal)
         activeSlider.minimumTrackTintColor = elapsedProgressColor
         activeSlider.maximumTrackTintColor = remainingProgressColor
         contentView.backgroundColor = .clear
