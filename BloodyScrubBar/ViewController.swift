@@ -28,6 +28,10 @@ class ViewController: UIViewController {
         scrubBar.delegate = self
     }
 
+    @IBAction func hideEndLabelSwitchChanged(_ sender: UISwitch) {
+        trailingLabel.isHidden = sender.isOn
+    }
+
     // MARK: Leading inactive proportion
 
     @IBAction func leadingTextEntered(_ sender: UITextField) {

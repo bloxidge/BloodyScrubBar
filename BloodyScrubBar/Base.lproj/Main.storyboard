@@ -70,19 +70,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4P2-ti-4kh">
-                                <rect key="frame" x="64" y="152" width="724" height="89"/>
+                                <rect key="frame" x="96" y="190" width="660" height="89"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="7Es-4i-vks">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="89"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="89"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leading Inactive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODE-0D-W82">
-                                                <rect key="frame" x="0.0" y="0.0" width="200" height="17"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.000" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tpj-qd-tsX">
-                                                <rect key="frame" x="0.0" y="21" width="200" height="34"/>
+                                                <rect key="frame" x="0.0" y="21" width="150" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 <connections>
@@ -90,9 +90,9 @@
                                                 </connections>
                                             </textField>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6oy-9p-Egi">
-                                                <rect key="frame" x="-2" y="59" width="204" height="31"/>
+                                                <rect key="frame" x="-2" y="59" width="154" height="31"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="kva-Be-x0W"/>
+                                                    <constraint firstAttribute="width" constant="150" id="kva-Be-x0W"/>
                                                 </constraints>
                                                 <color key="minimumTrackTintColor" systemColor="systemFillColor"/>
                                                 <color key="maximumTrackTintColor" systemColor="tintColor"/>
@@ -103,16 +103,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="BQX-GT-LC8">
-                                        <rect key="frame" x="524" y="0.0" width="200" height="89"/>
+                                        <rect key="frame" x="510" y="0.0" width="150" height="89"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trailing Inactive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoZ-Qi-hyK">
-                                                <rect key="frame" x="0.0" y="0.0" width="200" height="17"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.000" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ayh-i9-VpQ">
-                                                <rect key="frame" x="0.0" y="21" width="200" height="34"/>
+                                                <rect key="frame" x="0.0" y="21" width="150" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 <connections>
@@ -120,10 +120,7 @@
                                                 </connections>
                                             </textField>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4U7-Oj-K4Z">
-                                                <rect key="frame" x="-2" y="59" width="204" height="31"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="VpV-Bt-8Qe"/>
-                                                </constraints>
+                                                <rect key="frame" x="-2" y="59" width="154" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="tintColor"/>
                                                 <color key="maximumTrackTintColor" systemColor="systemFillColor"/>
                                                 <connections>
@@ -133,16 +130,38 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="4U7-Oj-K4Z" firstAttribute="width" secondItem="6oy-9p-Egi" secondAttribute="width" id="DFx-ti-9mR"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pSf-lD-aSV">
+                                <rect key="frame" x="730.66666666666663" y="102" width="97.333333333333371" height="56"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hide End Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtY-xX-8S3">
+                                        <rect key="frame" x="0.0" y="0.0" width="97.333333333333329" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sdT-vL-cIa">
+                                        <rect key="frame" x="24.333333333333371" y="25" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="hideEndLabelSwitchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="kJ7-5s-wKW"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="h3A-m7-DKc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vH9-GK-Gvi" firstAttribute="trailing" secondItem="h3A-m7-DKc" secondAttribute="trailing" constant="-24" id="0bh-sG-EOx"/>
+                            <constraint firstItem="vH9-GK-Gvi" firstAttribute="top" secondItem="4P2-ti-4kh" secondAttribute="bottom" constant="32" id="1ty-g5-Qeq"/>
                             <constraint firstItem="nH7-ow-5Yb" firstAttribute="leading" secondItem="h3A-m7-DKc" secondAttribute="leading" id="8Fd-Ab-d9p"/>
-                            <constraint firstItem="4P2-ti-4kh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Akb-UY-2Nm"/>
-                            <constraint firstItem="4P2-ti-4kh" firstAttribute="leading" secondItem="h3A-m7-DKc" secondAttribute="leading" constant="64" id="ME2-K6-KKW"/>
+                            <constraint firstItem="4P2-ti-4kh" firstAttribute="top" secondItem="pSf-lD-aSV" secondAttribute="bottom" constant="32" id="B60-7o-MBc"/>
+                            <constraint firstItem="4P2-ti-4kh" firstAttribute="leading" secondItem="h3A-m7-DKc" secondAttribute="leading" constant="96" id="ME2-K6-KKW"/>
                             <constraint firstItem="h3A-m7-DKc" firstAttribute="trailing" secondItem="nH7-ow-5Yb" secondAttribute="trailing" id="OHL-Lf-89X"/>
+                            <constraint firstItem="h3A-m7-DKc" firstAttribute="trailing" secondItem="pSf-lD-aSV" secondAttribute="trailing" constant="24" id="PeC-bb-S1t"/>
                             <constraint firstItem="LIc-mO-Cfh" firstAttribute="top" secondItem="u4s-nc-l4I" secondAttribute="bottom" constant="16" id="TT0-iI-a2r"/>
                             <constraint firstItem="h3A-m7-DKc" firstAttribute="bottom" secondItem="vH9-GK-Gvi" secondAttribute="bottom" id="USD-PD-7yu"/>
                             <constraint firstItem="vH9-GK-Gvi" firstAttribute="leading" secondItem="h3A-m7-DKc" secondAttribute="leading" constant="24" id="dtF-yf-te8"/>
